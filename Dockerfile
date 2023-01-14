@@ -1,9 +1,7 @@
-From Mysql:latest
-
-RUN apt-get update
+From mysql
 
 ENV MYSQL_ROOT_PASSWORD Root
 
-ADD Sample_DB.sql /docker-entrypoint-initdb.d
+ADD Sample-SQL.sql /docker-entrypoint-initdb.d
 
 EXPOSE 3306
