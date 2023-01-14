@@ -1,15 +1,14 @@
-Version: '3.8'
-
-Services:
+version: '3.8'
+services:
   db:
     container-name: MysqlDB-server
     build: .
     volumes:
       - db_vol: /var/lib/mysql
-      environment:
-        MYSQL_DATABASE: testdb1
-        MYSQL_USER: testuser
-        MYSQL_PASSWORD: test
+     environment:
+       MYSQL_DATABASE: testdb1
+       MYSQL_USER: testuser
+       MYSQL_PASSWORD: test
     ports:
       - 3306:3306
     restart: always
