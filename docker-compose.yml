@@ -25,4 +25,4 @@ services:
       MYSQL_ROOT_PASSWORD: Root
 
   volumes:
-    - db_vol:
+    - db_vol
